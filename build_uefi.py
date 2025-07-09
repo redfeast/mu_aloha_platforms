@@ -135,7 +135,7 @@ def device_error_exit(device_name, possible_devices_list):
     usage = "Usage: build_uefi.py -d <target_device> [-psth]\n"
     help_msg = "Use \033[33mbuild_uefi.py --help\033[0m for details"
     not_found_msg = "Target device not found."
-    link_msg = "See \033[32mhttps://github.com/woa-msmnile/msmnilePkg#target-list\033[0m for all devices available."
+    link_msg = "See \033[32mhttps://github.com/Project-Aloha/mu_aloha_platforms#target-list\033[0m for all devices available."
     print(usage)
     if not possible_devices_list:
         print(help_msg)
