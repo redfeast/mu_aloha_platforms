@@ -40,9 +40,6 @@ VOID PlatformInitialize(VOID)
   // Disable MDSS DSI0 Controller
   // DisableMDSSDSIController(MDSS_DSI0);
 
-  // Disable MDSS DSI1 Controller
-  // DisableMDSSDSIController(MDSS_DSI1);
-
   // Windows requires Cache Coherency for the UFS to work at its best
   // The UFS device is currently attached to the main IOMMU on Context Bank 1
   // (Previous firmware) But said configuration is non cache coherent compliant,
