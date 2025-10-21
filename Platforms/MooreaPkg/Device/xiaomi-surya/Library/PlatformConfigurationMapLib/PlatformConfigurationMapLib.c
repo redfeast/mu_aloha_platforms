@@ -18,6 +18,8 @@ static CONFIGURATION_DESCRIPTOR_EX gDeviceConfigurationDescriptorEx[] = {
     {"Sdc1GpioConfigOff", 0xA00},
     {"Sdc2GpioConfigOff", 0xA00},
     {"EnableSDHCSwitch", 0x1},
+    {"EnableUfsIOC", 1},
+    {"UfsSmmuConfigForOtherBootDev", 1},
     {"SecurityFlag", 0xC4},
     {"TzAppsRegnAddr", 0x86D00000},
     {"TzAppsRegnSize", 0x03E00000},
