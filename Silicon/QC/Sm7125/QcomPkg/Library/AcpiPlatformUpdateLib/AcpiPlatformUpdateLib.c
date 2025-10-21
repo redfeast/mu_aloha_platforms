@@ -164,7 +164,7 @@ PlatformUpdateAcpiTables(VOID)
   UpdateNameAslCode(SIGNATURE_32('T', 'C', 'M', 'A'), &TCMA, 4);
   UpdateNameAslCode(SIGNATURE_32('T', 'C', 'M', 'L'), &TCML, 4);
   UpdateNameAslCode(SIGNATURE_32('S', 'O', 'S', 'I'), &SOSI, 8);
-  UpdateNameAslCode(SIGNATURE_32('P', 'R', 'P', '0'), &PRP0, 4);
+//  UpdateNameAslCode(SIGNATURE_32('P', 'R', 'P', '0'), &PRP0, 4);
 //  UpdateNameAslCode(SIGNATURE_32('P', 'R', 'P', '1'), &PRP1, 4);
-//  UpdateNameAslCode(SIGNATURE_32('S', 'I', 'D', 'S'), &SIDS, EFICHIPINFO_MAX_ID_LENGTH);
+  UpdateNameAslCode(SIGNATURE_32('S', 'I', 'D', 'S'), &SIDS, EFICHIPINFO_MAX_ID_LENGTH);
 }
