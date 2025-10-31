@@ -434,15 +434,15 @@ FILE FREEFORM = 03DED53E-BECD-428F-9F79-5ABA64C58445 {
 
 
 #FILE FREEFORM = CEF84EDC-7DAD-4D33-A0DD-E79FDE2CC42C {
-    SECTION UI = "Panel_K82_42_02_0a_dualdsi_cphy_lcd_vid.xml"
-    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_K82_42_02_0a_dualdsi_cphy_lcd_vid.xml
+#    SECTION UI = "Panel_K82_42_02_0a_dualdsi_cphy_lcd_vid.xml"
+#    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_K82_42_02_0a_dualdsi_cphy_lcd_vid.xml
 #}
 
 
-FILE FREEFORM = 770678B4-A469-49BE-9CAF-5ADB7D75B4FE {
-    SECTION UI = "Panel_K82_36_02_0b_dualdsi_cphy_lcd_vid.xml"
-    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_K82_36_02_0b_dualdsi_cphy_lcd_vid.xml
-}
+#FILE FREEFORM = 770678B4-A469-49BE-9CAF-5ADB7D75B4FE {
+#    SECTION UI = "Panel_K82_36_02_0b_dualdsi_cphy_lcd_vid.xml"
+#    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_K82_36_02_0b_dualdsi_cphy_lcd_vid.xml
+#}
 
 
 FILE FREEFORM = 8B86CD38-C772-4FCF-85AA-345B2B3C1AB4 {
@@ -469,16 +469,16 @@ FILE FREEFORM = C72FB1A9-5527-4E13-BAC4-F671D0330145 {
 }
 
 
-FILE FREEFORM = B0F8D1BE-5353-4812-B1F6-07E7768204CC {
-    SECTION UI = "battery_symbol_DebugBoot.bmp"
-    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/battery_symbol_DebugBoot.bmp
-}
+#FILE FREEFORM = B0F8D1BE-5353-4812-B1F6-07E7768204CC {
+#    SECTION UI = "battery_symbol_DebugBoot.bmp"
+#    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/battery_symbol_DebugBoot.bmp
+#}
 
 
-FILE FREEFORM = F9E8F683-E065-4E09-B4F9-0230D7CECD08 {
-    SECTION UI = "battery_symbol_DebugStay.bmp"
-    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/battery_symbol_DebugStay.bmp
-}
+#FILE FREEFORM = F9E8F683-E065-4E09-B4F9-0230D7CECD08 {
+#    SECTION UI = "battery_symbol_DebugStay.bmp"
+#    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/battery_symbol_DebugStay.bmp
+#}
 
 
 FILE FREEFORM = A1E235DE-E825-4591-9623-C43175811826 {
