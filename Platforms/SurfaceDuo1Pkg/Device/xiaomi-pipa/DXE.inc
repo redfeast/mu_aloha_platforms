@@ -2,7 +2,15 @@
 
 #FILE FREEFORM = DDE58710-41CD-4306-DBFB-3FA90BB1D2DD {
 #    SECTION UI = "uefiplat.cfg"
-#    SECTION RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/uefiplat.cfg
+#    S# LimitsDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = f09ad92e-4e91-490f-ab99-e69939b840b2 {
+#    SECTION UI = "LimitsDxe"
+#    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/LimitsDxe/LimitsDxe.raw
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/LimitsDxe/LimitsDxe.efi
+#}
+
+# HashDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = 3adf8dda-1850-44c5-8c63-bb991849bc6f {RAW = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/uefiplat.cfg
 #}
 
 INF Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/AdapterInformationDxe/AdapterInformationDxe.inf
@@ -117,39 +125,44 @@ INF QcomPkg/PatchedBinaries/PciHostBridgeDxe.inf
 #INF SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/PatchedBinaries/DisplayDxe.inf
 
 # DXE without depex
-FILE DRIVER = 6b38f7b4-ad98-40e9-9093-aca2b5a253c4 {
-    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.efi
-    SECTION UI = "DiskIoDxe"
-}
+# DiskIoDxe and PartitionDxe are already included in APRIORI.inc - removing duplicates
+#FILE DRIVER = 6b38f7b4-ad98-40e9-9093-aca2b5a253c4 {
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.efi
+#    SECTION UI = "DiskIoDxe"
+#}
 
-FILE DRIVER = 1fa1f39e-feff-4aae-bd7b-38a070a3b609 {
-    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.efi
-    SECTION UI = "PartitionDxe"
-}
+#FILE DRIVER = 1fa1f39e-feff-4aae-bd7b-38a070a3b609 {
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.efi
+#    SECTION UI = "PartitionDxe"
+#}
 
-FILE DRIVER = f09ad92e-4e91-490f-ab99-e69939b840b2 {
-    SECTION UI = "LimitsDxe"
-    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/LimitsDxe/LimitsDxe.raw
-    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/LimitsDxe/LimitsDxe.inf
-}
+# LimitsDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = f09ad92e-4e91-490f-ab99-e69939b840b2 {
+#    SECTION UI = "LimitsDxe"
+#    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/LimitsDxe/LimitsDxe.raw
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/LimitsDxe/LimitsDxe.inf
+#}
 
-FILE DRIVER = 3adf8dda-1850-44c5-8c63-bb991849bc6f {
-    SECTION UI = "HashDxe"
-    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/HashDxe/HashDxe.raw
-    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/HashDxe/HashDxe.efi
-}
+# HashDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = 3adf8dda-1850-44c5-8c63-bb991849bc6f {
+#    SECTION UI = "HashDxe"
+#    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/HashDxe/HashDxe.raw
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/HashDxe/HashDxe.efi
+#}
 
-FILE DRIVER = 5f0937cd-73f9-445e-b320-bb6fd5d3cbde {
-    SECTION UI = "CipherDxe"
-    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/CipherDxe/CipherDxe.raw
-    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/CipherDxe/CipherDxe.efi
-}
+# CipherDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = 5f0937cd-73f9-445e-b320-bb6fd5d3cbde {
+#    SECTION UI = "CipherDxe"
+#    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/CipherDxe/CipherDxe.raw
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/CipherDxe/CipherDxe.efi
+#}
 
-FILE DRIVER = b0d3689e-11f8-43c6-8ece-023a29cec35b {
-    SECTION UI = "RngDxe"
-    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/RNGDxe/RngDxe.raw
-    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RNGDxe/RngDxe.efi
-}
+# RngDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = b0d3689e-11f8-43c6-8ece-023a29cec35b {
+#    SECTION UI = "RngDxe"
+#    SECTION RAW = Epsilon/BOOT.XF.3.0-00527-SM8150LZB-1/QcomPkg/Drivers/RNGDxe/RngDxe.raw
+#    SECTION PE32 = SurfaceDuo1Pkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RNGDxe/RngDxe.efi
+#}
 
 #
 #FILE DRIVER = 32C71E68-83A8-46ED-AED1-094E71B12057 {
@@ -162,25 +175,28 @@ FILE DRIVER = b0d3689e-11f8-43c6-8ece-023a29cec35b {
 #    SECTION UI = "ASN1X509Dxe"
 #}
 
-FILE DRIVER = B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
-    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/XhciDxe/XhciDxe.efi
-    SECTION UI = "XhciDxe"
-}
+# XhciDxe driver is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
+#    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/XhciDxe/XhciDxe.efi
+#    SECTION UI = "XhciDxe"
+#}
 
-FILE DRIVER = 240612B7-A063-11D4-9A3A-0090273FC14D {
-    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/UsbBusDxe/UsbBusDxe.efi
-    SECTION UI = "UsbBusDxe"
-}
+# UsbBusDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = 240612B7-A063-11D4-9A3A-0090273FC14D {
+#    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/UsbBusDxe/UsbBusDxe.efi
+#    SECTION UI = "UsbBusDxe"
+#}
 
 #FILE DRIVER = 2D2E62CF-9ECF-43B7-8219-94E7FC713DFE {
 #    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/UsbKbDxe/UsbKbDxe.efi
 #    SECTION UI = "UsbKbDxe"
 #}
 
-FILE DRIVER = 9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E {
-    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/UsbMassStorageDxe/UsbMassStorageDxe.efi
-    SECTION UI = "UsbMassStorageDxe"
-}
+# UsbMassStorageDxe is already included in APRIORI.inc - removing duplicate
+#FILE DRIVER = 9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E {
+#    SECTION PE32 = Cambria/BOOT.XF.3.0.1-00243-SC8180XWZB-2/QcomPkg/Drivers/UsbMassStorageDxe/UsbMassStorageDxe.efi
+#    SECTION UI = "UsbMassStorageDxe"
+#}
 
 # Raw Files
 
